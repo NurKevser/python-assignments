@@ -6,4 +6,10 @@ for i in range(1,51):
   elif i%3 == 0:
     print("Fizz")  
   else:
-    print(i) 
+    print(i)
+
+                   WITH TERNARY CONDITIONS
+
+for i in range(1,51):
+  print("FizzBuzz" if i % 3 == 0 and i % 5 == 0 else "Fizz" if i % 3 == 0 else \
+        "Buzz" if i % 5 == 0 else i)
