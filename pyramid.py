@@ -23,4 +23,13 @@ for i in range(8,0,-1):
 1
 
 
+for i in range (10):
+  if i % 2:
+    print((f"{i-1}" * i).center(len(range(10))), end="  ")
+    print((f"{i}" * i).center(len(range(10))))
 
+    0           1     
+   222         333    
+  44444       55555   
+ 6666666     7777777  
+888888888   999999999
