@@ -19,3 +19,9 @@ def wash_hands(N, nM):
   a = N*21*nM*30 // 60
   b = N*21*nM*30 % 60
   return (f"{a} minutes and {b} seconds" )
+
+
+
+---divmod()---
+def wash_hands(N, nM):
+  return '{} minutes and {} seconds'.format(*divmod(21*30*N*nM, 60))
