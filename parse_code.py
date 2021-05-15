@@ -31,3 +31,9 @@ def parse_code(string):
   dicto['id'] = xx[2]
   return dicto
 parse_code("John000Doe000123")
+
+
+
+def parse_code(word):
+    return dict(zip(("first_name", "last_name", "id"), [j for j in word.split("0") if j != ""]))
+parse_code("John000Doe000123")
