@@ -36,4 +36,17 @@ def change_vowels(string):
     else:
       new += j  
     if j in vowels.values() 
-  return new    
+  return new   
+
+
+                        WITH MAKETRANS
+
+
+def encode(st):
+    transTable = st.maketrans('aeiou', '12345')
+    return st.translate(transTable)
+def decode(st):
+    transTable = st.maketrans('12345', 'aeiou')
+    return st.translate(transTable)                        
+
+
