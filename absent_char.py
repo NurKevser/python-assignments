@@ -23,3 +23,15 @@ def missing_char(liste):
 
 missing_char(["f","a","b","c","e"])
 'd'
+
+
+             Arrange the Solution
+          
+def missing_char(liste):
+  res = []
+  for i in liste:
+    res.extend(ord(num) for num in i)
+    for j in range(min(res),max(res)):
+      if chr(j) not in liste:
+        return chr(j)
+missing_char(["h","d","a","b","f","c","e"])           
