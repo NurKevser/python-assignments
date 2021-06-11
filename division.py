@@ -9,3 +9,15 @@ def division(x,y):
     count += 1
   return count
 division(100,4)
+
+
+       Finally Solution
+
+def division(x,y):
+  toplam = 0
+  count = 0
+  while toplam <= x:
+    toplam += y
+    count += 1
+  return count-1 
+division(10,4)        
